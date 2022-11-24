@@ -54,7 +54,9 @@
       <form class="form" action="#" method="post">
         <section class="fullname">
           <h2 class="visually-hidden">Полное имя</h2>
-          <p class="fullname__title">Представтесь:</p>
+          <p class="fullname__title">
+            Представтесь:
+          </p>
           <label for="fullname__name">Имя*:</label>
           <input class="fullname__name" id="fullname__name" name="name" type="text" value="Петр" required>
           <label for="fullname__surname">Фамилия*:</label>
@@ -65,7 +67,9 @@
 
         <section class="contact-info">
           <h2 class="visually-hidden">Контакты</h2>
-          <p class="contact-info__title">Контактная информация:</p>
+          <p class="contact-info__title">
+            Контактная информация:
+          </p>
           <label for="contact-info__phone">Контактный телефон*:</label>
           <input class="contact-info__phone" id="contact-info__phone" name="phone" type="text" placeholder="Введите телефон" required>
           <label for="contact-info__email">Электронная почта*</label>
@@ -74,7 +78,9 @@
 
         <section class="impression">
           <h2 class="visually-hidden">Впечатления</h2>
-          <p class="impression__title">Ваше общее впечатление:</p>
+          <p class="impression__title">
+            Ваше общее впечатление:
+          </p>
           <label>
             <input type="radio" name="impression" checked>
             Скорее положительное
@@ -91,7 +97,9 @@
 
         <section class="attraction">
           <h2 class="visually-hidden">Достопримечательности</h2>
-          <p class="attraction__title">Посещенные достопримечательности:</p>
+          <p class="attraction__title">
+            Посещенные достопримечательности:
+          </p>
           <label>
             <input type="checkbox" name="devil-bridge" checked>
             Мост дьявола
@@ -112,14 +120,18 @@
 
         <section class="emotions">
           <h2 class="visually-hidden">Ваши Эмоции</h2>
-          <p class="emotions__title">Опишите свои эмоции:</p>
-          <textarea name="emotions" id="" cols="30" rows="10">
-            Опишите подробно все свои восторги
-          </textarea>
+          <p class="emotions__title">
+            <label for="emotions">
+              Опишите свои эмоции:
+            </label>
+          </p>
+          <textarea id="emotions" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
         </section>
         <div class="form-submission">
           <button type="submit">Отправить отзыв</button>
-          <p class="form-submission__comment">*-обязательные поля</p>
+          <p class="form-submission__comment">
+            *-обязательные поля
+          </p>
         </div>
       </form>
     </main>
