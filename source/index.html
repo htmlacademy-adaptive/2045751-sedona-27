@@ -4,34 +4,32 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body style="background: grey;">
+  <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="logo">
+        <a>
           <img class="logo__img" src="img/logo.svg" alt="Логотип сайта" width="185" height="96">
-        </div>
-        <div class="gamburger-menu">
-          <a class="gamburger-menu__link" href="#">
-            <img src="img/gamburger-menu.svg" alt="Гамбургер меню на мобильной версии" width="23" height="22">
-          </a>
-        </div>
+        </a>
+        <button type="button">
+          <span class="visually-hidden">Меню гамбургер</span>
+        </button>
       </div>
-      <div class="mobile-menu">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
             <a href="#">Главная</a>
           </li>
-          <li class="mobile-menu__item">
+          <li class="nav__item">
             <a href="catalog.html">Фото и видео</a>
           </li>
-          <li class="mobile-menu__item">
+          <li class="nav__item">
             <a href="form.html">Форма отзыва</a>
           </li>
-          <li class="mobile-menu__item">
+          <li class="nav__item">
             <a href="#">html academy</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -69,40 +67,38 @@
               <div class="reasons__item-photo">
                 <img src="img/reason-1-img.png" alt="Фрагмент фото Седоны" >
               </div>
-              <div class="recommendations">
-                <ul class="recommendations__list">
-                  <li class="recommendations__item">
-                    <div class="recommendations__item-content">
-                      <p class="recommendations__item-title">
-                        Жилье
-                      </p>
-                      <p class="recommendations__item-text">
-                        Рекомендуем пожить в настоящем мотеле, все как в кино!
-                      </p>
-                    </div>
-                  </li>
-                  <li class="recommendations__item">
-                    <div class="recommendations__item-content">
-                      <p class="recommendations__item-title">
-                        Еда
-                      </p>
-                      <p class="recommendations__item-text">
-                        Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
-                      </p>
-                    </div>
-                  </li>
-                  <li class="recommendations__item">
-                    <div class="recommendations__item-content">
-                      <p class="recommendations__item-title">
-                        Сувениры
-                      </p>
-                      <p class="recommendations__item-text">
-                        Не только китайского, но и местного производства!
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <ul class="recommendations__list">
+                <li class="recommendations__item">
+                  <div class="recommendations__item-content">
+                    <p class="recommendations__item-title">
+                      Жилье
+                    </p>
+                    <p class="recommendations__item-text">
+                      Рекомендуем пожить в настоящем мотеле, все как в кино!
+                    </p>
+                  </div>
+                </li>
+                <li class="recommendations__item">
+                  <div class="recommendations__item-content">
+                    <p class="recommendations__item-title">
+                      Еда
+                    </p>
+                    <p class="recommendations__item-text">
+                      Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                    </p>
+                  </div>
+                </li>
+                <li class="recommendations__item">
+                  <div class="recommendations__item-content">
+                    <p class="recommendations__item-title">
+                      Сувениры
+                    </p>
+                    <p class="recommendations__item-text">
+                      Не только китайского, но и местного производства!
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </li>
             <li class="reasons__item">
               <div class="reasons__item-content">
@@ -185,25 +181,23 @@
         <div class="page-footer__title">
           #visitsedona
         </div>
-        <div class="socials">
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a href="#">
-                <img src="img/icon-vk.svg" alt="В контакте" width="24" height="24">
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#">
-                <img src="img/icon-telegram.svg" alt="Телеграм" width="24" height="24">
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#">
-                <img src="img/icon-youtube.svg" alt="Ютюб" width="24" height="24">
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#">
+              <img src="img/icon-vk.svg" alt="В контакте" width="24" height="24">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#">
+              <img src="img/icon-telegram.svg" alt="Телеграм" width="24" height="24">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#">
+              <img src="img/icon-youtube.svg" alt="Ютюб" width="24" height="24">
+            </a>
+          </li>
+        </ul>
         <div class="page-footer__info">
           <p class="page-footer__info-text">
             разработано
