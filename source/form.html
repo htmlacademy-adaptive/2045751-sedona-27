@@ -46,7 +46,7 @@
           <p class="form__text">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
-          <fieldset class="personal-details">
+          <fieldset class="personal-details fieldset-options">
             <legend class="personal-details__title">
               Представтесь:
             </legend>
@@ -58,7 +58,7 @@
             <input class="personal-details__patronymic" id="personal-details__patronymic" name="patronymic" type="text" value="Викторович">
           </fieldset>
 
-          <fieldset class="personal-details">
+          <fieldset class="personal-details fieldset-options">
             <legend class="personal-details__title">
               Контактная информация:
             </legend>
@@ -68,7 +68,7 @@
             <input class="personal-details__email" id="personal-details__email" name="phone" type="text" placeholder="Введите e-mail" required>
           </fieldset>
 
-          <fieldset class="impression">
+          <fieldset class="impression fieldset-options">
             <legend class="impression__title">
               Ваше общее впечатление:
             </legend>
@@ -86,7 +86,7 @@
             </label>
           </fieldset>
 
-          <fieldset class="attraction">
+          <fieldset class="attraction fieldset-options">
             <legend class="attraction__title">
               Посещенные достопримечательности:
             </legend>
@@ -108,7 +108,7 @@
             </label>
           </fieldset>
 
-          <fieldset class="emotions">
+          <fieldset class="emotions fieldset-options">
             <legend>
               Опишите свои эмоции:
             </legend>
@@ -126,33 +126,35 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__hashtag">
-        #visitsedona
-      </div>
-      <ul class="socials-list">
-        <li class="socials-item">
-          <a href="#">
-            <span class="visually-hidden">В контакте</span>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a href="#">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a href="#">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__info">
-        <p class="page-footer__info-text">
-          <span>разработано</span>
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" alt="Логотип htmlacademy">
-          </a>
-        </p>
+      <div class="wrapper-mobile">
+        <div class="page-footer__hashtag">
+          #visitsedona
+        </div>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a class="socials-item__link socials-vk" href="#">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-item__link socials-telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-item__link socials-youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__info">
+          <p class="page-footer__info-text">
+            <span>разработано</span>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/htmlacademy.svg" alt="Логотип htmlacademy">
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   </body>
