@@ -1,6 +1,22 @@
 .recommendations-list {
   margin: 0;
   padding: 0;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 237px);
+  row-gap: 25px;
+  justify-content: end;
   list-style: none;
+}
+
+.recommendations-item__content {
+  text-align: left;
+}
+
+.recommendations-item__title {
+  margin: 0;
+  .font-title();
+}
+
+.recommendations-item__text {
+  margin: 0;
 }
