@@ -30,7 +30,7 @@ body {
   position: relative;
   min-height: 214px;
   background-color: #81B3D2;
-  background-image: url("../../img/intro-img.png");
+  background-image: url("../img/intro-img.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -79,17 +79,17 @@ body {
   background-color: #81B3D2;
 }
 .socials-vk {
-  background-image: url('../../img/icon-vk.svg');
+  background-image: url('../img/icon-vk.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 .socials-telegram {
-  background-image: url('../../img/icon-telegram.svg');
+  background-image: url('../img/icon-telegram.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 .socials-youtube {
-  background-image: url('../../img/icon-youtube.svg');
+  background-image: url('../img/icon-youtube.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -124,17 +124,17 @@ body {
   color: #ffffff;
 }
 .promo {
-  min-height: 389px;
   background-color: #81B3D3;
-  background-image: url('../../img/promo-photo.png');
+  background-image: url('../img/promo-photo.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 90px;
+  padding-bottom: 85px;
 }
 .promo__caption-img {
   display: block;
   margin: 0 auto;
-  padding-top: 90px;
 }
 .photo-video__text {
   margin: 0;
@@ -204,13 +204,13 @@ body {
   background-color: #81B3D2;
 }
 .reason-1 {
-  background-image: url('../../img/reason-1-img.png');
+  background-image: url('../img/reason-1-img.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .reason-2 {
-  background-image: url('../../img/reason-2-img.png');
+  background-image: url('../img/reason-2-img.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
