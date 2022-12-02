@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фото и видео</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/2045751-sedona-27/3/">
+</head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" alt="Логотип сайта" width="185" height="96">
+        </a>
+        <button type="button">
+          <span class="visually-hidden">Меню гамбургер</span>
+        </button>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фото и видео</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-catalog">
+      <section class="intro">
+        <h1 class="visually-hidden">Каталог фотографий и видео Седоны</h1>
+        <img class="intro__caption-img" src="img/intro-text.svg" alt="Надпись Седона крупным шрифтом">
+      </section>
+
+      <section class="photo-video">
+        <div class="wrapper-mobile">
+          <h2 class="photo-video__title">Фото и видео</h2>
+          <p class="photo-video__text">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике
+          </p>
+          <ul class="photo-list">
+            <li class="photo-item">
+              <img class="photo-item__img" src="img/catalog-non-native-spaces.jpg" alt="Автомобиль едет по дороге на фоне гор" width="280" height="280">
+              <p class="photo-item__name">
+                неродные просторы
+              </p>
+              <p class="photo-item__author">
+                Автор фото: Борис
+              </p>
+              <button type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+              <output>1350</output>
+            </li>
+            <li class="photo-item">
+              <img class="photo-item__img" src="img/catalog-local-vegetation.jpg" alt="Кактус крупным планом на фоне скал" width="280" height="280">
+              <p class="photo-item__name">
+                местная растительность
+              </p>
+              <p class="photo-item__author">
+                Автор фото: Сергей
+              </p>
+              <button type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+              <output>143</output>
+            </li>
+            <li class="photo-item">
+              <img class="photo-item__img" src="img/catalog-road-north.jpg" alt="Дорога проходит через леса" width="280" height="280">
+              <p class="photo-item__name">
+                дорога на север
+              </p>
+              <p class="photo-item__author">
+                Автор фото: Петр
+              </p>
+              <button type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+              <output>96</output>
+            </li>
+            <li class="photo-item">
+              <img class="photo-item__img" src="img/catalog-devil's-bridge.jpg" alt="Красивый вид на скалы" width="280" height="280">
+              <p class="photo-item__name">
+                Мост дьявола
+              </p>
+              <p class="photo-item__author">
+                Автор фото: Антон
+              </p>
+              <button type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+              <output>254</output>
+            </li>
+          </ul>
+          <div class="video">
+            <p class="video__title">
+              Все еще сомневаетесь?
+            </p>
+            <p class="video__text">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </p>
+            <video poster="img/video-poster.png" width="280" height="177" playsinline>
+              <source src="#" type="video/webm">
+              <source src="#" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="wrapper-mobile">
+        <div class="page-footer__hashtag">
+          #visitsedona
+        </div>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a class="socials-item__link socials-vk" href="#">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-item__link socials-telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-item__link socials-youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__info">
+          <p class="page-footer__info-text">
+            <span>разработано</span>
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/htmlacademy.svg" alt="Логотип htmlacademy">
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
