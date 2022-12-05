@@ -1,5 +1,5 @@
 .page-header {
-  height: 56px;
+  min-height: 56px;
   position: relative;
 }
 
@@ -12,7 +12,9 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
+
 .page-header__button {
   width: 23px;
   height: 22px;
@@ -23,4 +25,10 @@
   background-image: url("../img/gamburger-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media(min-width: @tablet) {
+  .page-header__button {
+    display: none;
+  }
 }

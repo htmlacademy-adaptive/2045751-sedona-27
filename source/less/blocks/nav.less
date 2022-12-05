@@ -1,12 +1,17 @@
 .nav {
-  background-color: #81B3D2;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: @bg-color-nav;
 }
+
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .nav__item {
@@ -20,6 +25,34 @@
   color: #ffffff;
 }
 
-.nav--hidden {
-  display: none;
+.nav {
+  z-index: 2;
+}
+
+@media(min-width: @tablet) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+  .nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nav__list-left {
+    width: 315px;
+    margin-right: auto;
+  }
+  .nav__list-right {
+    width: 315px;
+  }
+  .nav__item {
+    text-align: center;
+    min-width: 153px;
+  }
+  .nav__link {
+    .font-nav-tablet();
+    color: #000000;
+  }
 }

@@ -1,9 +1,10 @@
 .promo {
+  position: relative;
   background-color: #81B3D3;
   background-image: url('../img/promo-photo.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   padding-top: 90px;
   padding-bottom: 85px;
 }
@@ -11,4 +12,12 @@
 .promo__caption-img {
   display: block;
   margin: 0 auto;
+}
+
+@media(min-width: @tablet) {
+  .promo {
+    background-image: url('../img/promo-photo-tablet.png');
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
 }

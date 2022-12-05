@@ -18,8 +18,15 @@ body {
   overflow: hidden;
 }
 
-.wrapper-mobile {
+.wrapper {
   padding-left: @mobile-padding-left;
   padding-right: @mobile-padding-right;
   text-align: center;
+}
+
+@media(min-width: @tablet) {
+  .wrapper {
+    padding-left: @tablet-padding-left;
+    padding-right: @tablet-padding-right;
+  }
 }
