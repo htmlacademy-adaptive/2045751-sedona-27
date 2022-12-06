@@ -45,3 +45,36 @@
 .recommendations-item__text {
   margin: 0;
 }
+
+@media(min-width: @tablet) {
+  .recommendations-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 33px;
+  }
+  .recommendations-item {
+    padding-top: 98px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .recommendations-item__content {
+    text-align: center;
+  }
+  .recommendations-item__house {
+    background-image: url("../img/icon-house-tablet.svg");
+    background-position: center top;
+  }
+  .recommendations-item__burger {
+    background-image: url("../img/icon-burger-tablet.svg");
+    background-position: center top;
+  }
+  .recommendations-item__gift {
+    background-image: url("../img/icon-gift-tablet.svg");
+    background-position: center top;
+  }
+  .recommendations-item__title {
+    padding-bottom: 30px;
+    .font-title-tablet();
+  }
+}
