@@ -61,7 +61,7 @@
         <ul class="reasons__list">
           <li class="reasons__item">
             <div class="reasons__item-wrapper">
-              <div class="reasons__item-content reasons__item-content--change-bg-color1">
+              <div class="reasons__item-content reasons__item-content--change-color">
                 <div class="wrapper">
                   <h3 class="reasons__item-title reasons__item-title--light" >
                     Настоящий городок
@@ -115,7 +115,7 @@
           </li>
           <li class="reasons__item">
             <div class="reasons__item-wrapper reasons__item-wrapper--reverse">
-              <div class="reasons__item-content reasons__item-content--change-bg-color1">
+              <div class="reasons__item-content reasons__item-content--change-color">
                 <div class="wrapper">
                   <h3 class="reasons__item-title reasons__item-title--light">
                     Там есть Мост дьявола
@@ -138,7 +138,7 @@
               <li class="more-reasons-item">
                 <div class="reasons__item-content">
                   <div class="wrapper">
-                    <h3 class="reasons__item-title">
+                    <h3 class="reasons__item-title more-reasons-item__title">
                       Небольшая площадь
                     </h3>
                     <p class="reasons__item-number">
@@ -153,7 +153,7 @@
               <li class="more-reasons-item">
                 <div class="reasons__item-content reasons__item-content--border">
                   <div class="wrapper">
-                    <h3 class="reasons__item-title">
+                    <h3 class="reasons__item-title more-reasons-item__title">
                       Красивая дорога
                     </h3>
                     <p class="reasons__item-number">
@@ -168,7 +168,7 @@
               <li class="more-reasons-item">
                 <div class="reasons__item-content reasons__item-content--border">
                   <div class="wrapper">
-                    <h3 class="reasons__item-title">
+                    <h3 class="reasons__item-title more-reasons-item__title">
                       Мало туристов
                     </h3>
                     <p class="reasons__item-number">
@@ -202,7 +202,10 @@
 
       <section class="map">
         <h2 class="visually-hidden">Интерактивная карта</h2>
-        <img class="map__img" src="img/map-mobile.png" alt="Изображение карты" width="320" height="350">
+        <picture>
+          <source srcset="img/map-tablet.png" media="(min-width: 768px)">
+          <img class="map__img" src="img/map-mobile.png" alt="Изображение карты" width="768" height="350">
+        </picture>
       </section>
     </main>
 
