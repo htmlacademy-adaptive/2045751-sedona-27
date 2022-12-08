@@ -1,3 +1,19 @@
+.reasons {
+  position: relative;
+}
+
+.reasons::before {
+  content: "";
+  width: 320px;
+  height: 57px;
+  background-image: url("../../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: -57px;
+  transform: translateX(-50%);
+}
+
 .reasons__content {
   padding-top: 32px;
   padding-right: 12px;
