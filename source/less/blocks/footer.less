@@ -1,6 +1,4 @@
 .page-footer {
-  display: flex;
-  justify-content: center;
   padding-top: 39px;
   padding-bottom: 23px;
 }
@@ -52,9 +50,31 @@
   margin: 0 auto;
 }
 
-.page-footer__info-text{
+.page-footer__info-text {
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.page-footer__info-img {
+  display: block;
+}
+
+@media(min-width: @tablet) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer__hashtag {
+    padding-bottom: 0;
+  }
+  .socials-list {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .page-footer__info {
+    margin: 0;
+  }
 }

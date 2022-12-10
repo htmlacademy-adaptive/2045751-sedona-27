@@ -57,8 +57,8 @@
   }
   .recommendations-item {
     padding-top: 98px;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .recommendations-item__content {
     text-align: center;
@@ -78,5 +78,14 @@
   .recommendations-item__title {
     padding-bottom: 30px;
     .font-title-tablet();
+  }
+}
+
+@media(min-width: @desktop) {
+  .recommendations-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 100px;
   }
 }

@@ -18,14 +18,25 @@ body {
 }
 
 .wrapper {
-  padding-left: @mobile-padding-left;
-  padding-right: @mobile-padding-right;
+  padding-left: 18px;
+  padding-right: 18px;
   text-align: center;
 }
 
 @media(min-width: @tablet) {
   .wrapper {
-    padding-left: @tablet-padding-left;
-    padding-right: @tablet-padding-right;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+}
+
+@media(min-width: @desktop) {
+  html {
+    background-color: #E7E5E5;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  body {
+    background-color: #ffffff;
   }
 }

@@ -42,7 +42,6 @@
     flex-wrap: wrap;
   }
   .nav__list-left {
-    width: 315px;
     margin-right: auto;
   }
   .nav__list-right {
@@ -55,5 +54,18 @@
   .nav__link {
     .font-nav-tablet();
     color: #000000;
+  }
+}
+
+@media(min-width: @desktop) {
+  .nav__list-left {
+    width: 480px;
+  }
+  .nav__list-right {
+    width: 480px;
+  }
+  .nav__item {
+    text-align: center;
+    min-width: 240px;
   }
 }
