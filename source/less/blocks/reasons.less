@@ -91,11 +91,6 @@
   background-position: center;
 }
 
-.next-reasons-item {
-  width: 256px;
-  margin: 0 auto;
-}
-
 @media(min-width: @tablet) {
   .reasons__content {
     width: 520px;
@@ -108,6 +103,8 @@
     .font-title-tablet();
   }
   .reasons__item-title {
+    width: 158px;
+    margin: 0 auto;
     padding-bottom: 19px;
     .font-title-tablet();
   }
@@ -139,16 +136,15 @@
     min-width: 512px;
     flex-grow: 10;
   }
-  .reasons__list-next {
-    display: grid;
-    grid-template-columns: repeat(3, 190px);
-    column-gap: 66px;
-    justify-content: center;
-  }
   .reasons::before {
     content: "";
     min-width: 768px;
     background-image: url("../../img/intro-triangle-tablet.svg");
+  }
+  .reasons__list-next {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+    justify-content: center;
   }
 }
 
@@ -157,14 +153,6 @@
     content: "";
     width: 1200px;
     background-image: url("../../img/intro-triangle-desktop.svg");
-  }
-  .reasons__item-title {
-    width: 150px;
-    margin: 0 auto;
-  }
-  .reasons__item-text {
-    width: 290px;
-    margin: 0 auto;
   }
   .reason-1 {
     background-image: url("../img/reason-1-desktop-img.png");
@@ -177,9 +165,14 @@
     flex-grow: 10;
   }
   .reasons__item-content {
-    min-width: 400px;
+    width: 300px;
     padding-top: 52px;
     padding-bottom: 51px;
     flex-grow: 1;
+  }
+  .reasons__list-next {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
   }
 }
