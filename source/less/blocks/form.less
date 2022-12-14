@@ -1,7 +1,71 @@
+.form {
+  position: relative;
+  padding-top: 37px;
+}
+
+.form::before {
+  content: "";
+  width: 320px;
+  height: 57px;
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: -57px;
+  transform: translateX(-50%);
+}
+
 .form__title {
   .font-title();
 }
 
+.personal-details__title {
+  .font-title();
+}
+
+.personal-details__wrapper {
+  text-align: left;
+}
+
 .fieldset-options {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
   border: none;
 }
+
+.personal-details__label {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+} 
+
+.personal-details__name,
+.personal-details__surname,
+.personal-details__patronymic {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: @bg-color-input;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  outline: none;
+  border: none;
+}
+
+.personal-details__phone,
+.personal-details__email {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: @bg-color-input;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  outline: none;
+  border: none;
+}
+
+
+
