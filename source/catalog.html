@@ -39,8 +39,11 @@
     <main class="page-catalog">
       <section class="intro">
         <h1 class="visually-hidden">Каталог фотографий и видео Седоны</h1>
-        <img class="intro__caption-img" src="img/intro-text.svg" alt="Надпись Седона крупным шрифтом">
-      </section>
+        <picture>
+          <source srcset="img/intro-text-tablet.svg" media="(min-width: 768px)">
+          <img class="intro__caption-img" src="img/intro-text.svg" alt="Надпись Седона крупным шрифтом">
+        </picture>
+        </section>
 
       <section class="photo-video">
         <div class="wrapper">
@@ -53,39 +56,44 @@
           <li class="photo-item">
             <div class="photo-video__wrapper wrapper">
               <picture>
-                <source srcset="img/catalog-non-native-spaces-desktop.jpg" media="(min-width: 1200px)" width="1200" height="400">
+                <source srcset="img/catalog-non-native-spaces-desktop.jpg" media="(min-width: 1280px)" width="1200" height="400">
                 <source srcset="img/catalog-non-native-spaces-tablet.jpg" media="(min-width: 768px)" width="648" height="400">
                 <img class="photo-item__img" src="img/catalog-non-native-spaces.jpg" alt="Автомобиль едет по дороге на фоне гор" width="280" height="280">
               </picture>
               <div class="photo-item__description">
+                <div class="photo-item__name">
                   <p class="photo-item__title">
                     неродные просторы
                   </p>
                   <p class="photo-item__author">
                     Автор фото: Борис
                   </p>
-                  <div class="photo-item__scores">
-                    <button class="photo-item__button" type="button">
-                      <span class="visually-hidden">Поставить лайк</span>
-                    </button>
-                    <output class="photo-item__out">1350</output>
-                  </div>
                 </div>
+                <div class="photo-item__scores">
+                  <button class="photo-item__button" type="button">
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </button>
+                  <output class="photo-item__out">1350</output>
+                </div>
+              </div>
             </div>
           </li>
           <li class="photo-item">
             <div class="photo-video__wrapper wrapper">
               <picture>
+                <source srcset="img/catalog-local-vegetation-desktop.jpg" media="(min-width: 1280px)" width="400" height="267">
                 <source srcset="img/catalog-local-vegetation-tablet.jpg" media="(min-width: 768px)" width="324" height="267">
                 <img class="photo-item__img" src="img/catalog-local-vegetation.jpg" alt="Кактус крупным планом на фоне скал" width="280" height="280">
               </picture>
               <div class="photo-item__description">
-                <p class="photo-item__title">
-                  местная растительность
-                </p>
-                <p class="photo-item__author">
-                  Автор фото: Сергей
-                </p>
+                <div class="photo-item__name">
+                  <p class="photo-item__title">
+                    местная растительность
+                  </p>
+                  <p class="photo-item__author">
+                    Автор фото: Сергей
+                  </p>
+                </div>
                 <div class="photo-item__scores">
                   <button class="photo-item__button" type="button">
                     <span class="visually-hidden">Поставить лайк</span>
@@ -98,16 +106,19 @@
           <li class="photo-item">
             <div class="photo-video__wrapper wrapper">
               <picture>
+                <source srcset="img/catalog-road-north-desktop.jpg" media="(min-width: 1280px)" width="400" height="267">
                 <source srcset="img/catalog-road-north-tablet.jpg" media="(min-width: 768px)" width="324" height="267">
                 <img class="photo-item__img" src="img/catalog-road-north.jpg" alt="Дорога проходит через леса" width="280" height="280">
               </picture>
               <div class="photo-item__description">
-                <p class="photo-item__title">
-                  дорога на север
-                </p>
-                <p class="photo-item__author">
-                  Автор фото: Петр
-                </p>
+                <div class="photo-item__name">
+                  <p class="photo-item__title">
+                    дорога на север
+                  </p>
+                  <p class="photo-item__author">
+                    Автор фото: Петр
+                  </p>
+                </div>
                 <div class="photo-item__scores">
                   <button class="photo-item__button" type="button">
                     <span class="visually-hidden">Поставить лайк</span>
@@ -120,16 +131,19 @@
           <li class="photo-item">
             <div class="photo-video__wrapper wrapper">
               <picture>
+                <source srcset="img/catalog-devil's-bridge-desktop.jpg" media="(min-width: 1280px)" width="400" height="267">
                 <source srcset="img/catalog-devil's-bridge-tablet.jpg" media="(min-width: 768px)" width="324" height="267">
                 <img class="photo-item__img" src="img/catalog-devil's-bridge.jpg" alt="Красивый вид на скалы" width="280" height="280">
               </picture>
               <div class="photo-item__description">
-                <p class="photo-item__title">
-                  Мост дьявола
-                </p>
-                <p class="photo-item__author">
-                  Автор фото: Антон
-                </p>
+                <div class="photo-item__name">
+                  <p class="photo-item__title">
+                    Мост дьявола
+                  </p>
+                  <p class="photo-item__author">
+                    Автор фото: Антон
+                  </p>
+                </div>
                 <div class="photo-item__scores">
                   <button class="photo-item__button" type="button">
                     <span class="visually-hidden">Поставить лайк</span>
@@ -158,7 +172,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="wrapper">
+      <div class="page-footer__wrapper wrapper">
         <div class="page-footer__hashtag">
           #visitsedona
         </div>
