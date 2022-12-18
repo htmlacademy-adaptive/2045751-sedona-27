@@ -1,4 +1,4 @@
-//Миксины для шрифтов
+//Основной шрифт сайта
 .font-text() {
   font-family: @font-family, sans-serif;
   font-weight: 400;
@@ -6,6 +6,24 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @font-text-color;
+}
+
+//Шрифты для страницы форма
+.font-form-title() {
+  font-family: @font-family, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.font-form-allotted() {
+  font-family: @font-family, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
 }
 
 .font-title() {
@@ -20,6 +38,20 @@
   font-family: @font-family, sans-serif;
   font-weight: 700;
   font-size: 21px;
+  line-height: 26px;
+}
+
+.font-title-form-tablet() {
+  font-family: @font-family, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+}
+
+.font-title-catalog-tablet() {
+  font-family: @font-family, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 26px;
 }
 
@@ -52,14 +84,14 @@
 .button-search() {
   display: block;
   padding: 16px 49px;
-  background-color: @bg-color-button-search;
+  background-color: @bg-color-button;
   font-family: @font-family, sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
-  color: @color-button-search;
+  color: @color-button;
 }
 
 .button-search-tablet() {

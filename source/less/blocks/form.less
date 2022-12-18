@@ -3,6 +3,12 @@
   padding-top: 37px;
 }
 
+.form__wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+}
+
 .form::before {
   content: "";
   width: 320px;
@@ -16,22 +22,34 @@
 }
 
 .form__title {
-  .font-title();
+  .font-form-title();
 }
 
-.personal-details__title {
-  .font-title();
-}
+.form__text {
+  width: 280px;
+  margin: 0 auto;
+} 
 
 .personal-details__wrapper {
   text-align: left;
+}
+
+.form__wrapper--border {
+  border-top: 1px solid #E5E5E5;
 }
 
 .fieldset-options {
   width: 280px;
   margin: 0 auto;
   padding: 0;
+  padding-bottom: 24px;
   border: none;
+}
+
+.fieldset-options__title {
+  padding-top: 24px;
+  padding-bottom: 20px;
+  .font-form-title();
 }
 
 .personal-details__label {
@@ -52,6 +70,7 @@
   padding-left: 16px;
   outline: none;
   border: none;
+  .font-form-allotted();
 }
 
 .personal-details__phone,
@@ -65,7 +84,141 @@
   padding-left: 16px;
   outline: none;
   border: none;
+  .font-form-allotted();
 }
 
+.impression__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.impression__variants {
+  .font-form-allotted();
+}
+
+.attraction__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.attraction__variants {
+  .font-form-allotted();
+}
+
+.emotions__comment {
+  width: 280px;
+  background-color: @bg-color-input;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  .font-form-allotted();
+}
+
+.form-submission {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-submission__button {
+  width: 100%;
+  background-color: @bg-color-button;
+  padding: 16px 0;
+  font-family: @font-family, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: @color-button;
+  border: none;
+}
+
+.form-submission__comment {
+  width: 137px;
+  margin: 0 auto;
+  margin-right: 0;
+  font-family: @font-family, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: @font-text-color;
+}
+
+@media(min-width: @tablet) {
+  .form::before {
+    content: "";
+    width: 768px;
+    background-image: url("../img/intro-triangle-tablet.svg");
+  }
+  .form__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .form__title {
+    .font-title-form-tablet();
+  }
+  .form__text {
+    width: 435px;
+    margin: 0 auto;
+    padding-bottom: 102px;
+  }
+  .form__wrapper--border {
+    border-top: none;
+  }
+  .form__info {
+    position: relative;
+    width: 648px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .form__info::after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #DBDBDB;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .fieldset-options__title {
+    width: 280px;
+    .font-title-tablet();
+    padding-top: 0;
+  }
+  .impression__title  {
+    padding-top: 24px;
+  }
+  .impression__variants {
+    .font-title();
+    padding-right: 50px;
+    text-transform: none;
+  }
+  .impression__wrapper {
+    width: 576px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .attraction__variants {
+    width: 224px;
+    display: flex;
+    .font-title();
+    text-transform: none;
+  }
+  .attraction__wrapper {
+    width: 480px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .emotions {
+    width: 648px;
+  }
+  .emotions__comment {
+    width: 100%;
+  }
+}
 
 
