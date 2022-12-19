@@ -156,12 +156,18 @@
     padding-right: 60px;
   }
   .form__title {
-    .font-title-form-tablet();
+    font-family: @font-family, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
   }
   .form__text {
     width: 435px;
     margin: 0 auto;
     padding-bottom: 102px;
+  }
+  .form__info-wrapper {
+    padding: 0;
   }
   .form__wrapper--border {
     border-top: none;
@@ -186,30 +192,38 @@
   }
   .fieldset-options__title {
     width: 280px;
-    .font-title-tablet();
     padding-top: 0;
+    .font-form-title-tablet();
+  }
+  .impression {
+    width: 648px;
   }
   .impression__title  {
     padding-top: 24px;
   }
   .impression__variants {
-    .font-title();
-    padding-right: 50px;
+    width: 280px;
+    display: flex;
     text-transform: none;
+    .font-form-title();
   }
   .impression__wrapper {
     width: 576px;
+    margin: 0 auto;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .attraction__variants {
     width: 224px;
     display: flex;
-    .font-title();
     text-transform: none;
+    .font-form-title();
   }
   .attraction__wrapper {
     width: 480px;
+    margin: 0 auto;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -219,6 +233,49 @@
   .emotions__comment {
     width: 100%;
   }
+  .form-submission {
+    width: 648px;
+    display: flex;
+    align-items: center;
+  }
+  .form-submission__button {
+    width: 324px;
+  }
 }
 
+@media(min-width: @desktop) {
+  .form::before {
+    content: "";
+    width: 1200px;
+    background-image: url("../img/intro-triangle-desktop.svg");
+    top: -56px;
+  }
+  .form__info {
+    width: 960px;
+  }
+  .personal-details {
+    width: 430px;
+  }
+  .impression__wrapper {
+    width: 854px;
+  }
+  .attraction__wrapper {
+    width: 871px;
+  }
+  .attraction__variants {
+    width: 172px;
+  }
+  .emotions {
+    width: 768px;
+  }
+  .emotions__comment {
+    height: 176px;
+  }
+  .form-submission {
+    width: 768px;
+  }
+  .form-submission__button {
+    width: 384px;
+  }
+}
 
