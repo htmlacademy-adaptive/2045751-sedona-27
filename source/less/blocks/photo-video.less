@@ -80,7 +80,7 @@
   height: 21px;
   margin-right: 14px;
   background-color: transparent;
-  background-image: url(../../img/icon-like.svg);
+  background-image: url(../img/icon-like.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
@@ -168,7 +168,7 @@
 @media(min-width: @desktop) {
   .photo-video::before {
     content: "";
-    min-width: 1200px;
+    min-width: 100%;
     background-image: url("../img/intro-triangle-desktop.svg");
     top: -56px;
   }
@@ -176,7 +176,7 @@
     position: relative;
   }
   .photo-list {
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 324px);
   }
   .photo-item__description {
     width: 100%;
@@ -185,5 +185,29 @@
     position: absolute;
     left: 0;
     bottom: 0;
+  }
+  .photo-item__title {
+    .font-catalog-photo-name();
+    color: #ffffff;
+  }
+  .photo-item__author {
+    .font-catalog-photo-text();
+    color: #ffffff;
+  }
+  .photo-item__button {
+    background-image: url(../img/icon-like-desktop.svg);
+  }
+  .photo-item__out {
+    color: #ffffff;
+  }
+}
+
+@media(min-width: @huge) {
+  .photo-video::before {
+    content: "";
+    width: 1200px;
+  }
+  .photo-list {
+    grid-template-columns: repeat(3, 400px);
   }
 }

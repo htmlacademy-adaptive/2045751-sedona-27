@@ -1,6 +1,6 @@
 .form {
   position: relative;
-  padding-top: 37px;
+  padding-top: 22px;
 }
 
 .form__wrapper {
@@ -22,12 +22,14 @@
 }
 
 .form__title {
+  margin-bottom: 24px;
   .font-form-title();
 }
 
 .form__text {
   width: 280px;
   margin: 0 auto;
+  padding-bottom: 27px;
 } 
 
 .personal-details__wrapper {
@@ -56,12 +58,14 @@
   width: 100%;
   display: flex;
   justify-content: start;
+  padding-left: 17px;
 } 
 
 .personal-details__name,
 .personal-details__surname,
 .personal-details__patronymic {
   width: 100%;
+  margin-bottom: 16px;
   box-sizing: border-box;
   background-color: @bg-color-input;
   padding-top: 16px;
@@ -75,7 +79,9 @@
 
 .personal-details__phone,
 .personal-details__email {
+  position: relative;
   width: 100%;
+  margin-bottom: 13px;
   box-sizing: border-box;
   background-color: @bg-color-input;
   padding-top: 16px;
@@ -87,6 +93,42 @@
   .font-form-allotted();
 }
 
+.personal-details__icon {
+  position: relative;
+}
+
+.personal-details__icon-phone::after {
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+}
+
+.personal-details__icon-email::after {
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+}
+
+.impression {
+  padding-bottom: 33px;
+}
+
+.impression__title {
+  padding-bottom: 30px;
+}
+
 .impression__wrapper {
   display: flex;
   flex-direction: column;
@@ -94,7 +136,21 @@
 }
 
 .impression__variants {
+  margin-bottom: 36px;
   .font-form-allotted();
+}
+
+.impression__variants:last-child {
+  margin-bottom: 0;
+}
+
+.attraction {
+  padding-bottom: 33px;
+}
+
+.attraction__title  {
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
 .attraction__wrapper {
@@ -104,12 +160,24 @@
 }
 
 .attraction__variants {
+  margin-bottom: 36px;
   .font-form-allotted();
+}
+
+.attraction__variants:last-child {
+  margin-bottom: 0;
+}
+
+.emotions__title {
+  padding-bottom: 21px;
 }
 
 .emotions__comment {
   width: 280px;
+  margin-bottom: 27px;
   background-color: @bg-color-input;
+  padding-top: 16px;
+  padding-left: 18px;
   box-sizing: border-box;
   resize: none;
   border: none;
@@ -137,7 +205,8 @@
 .form-submission__comment {
   width: 137px;
   margin: 0 auto;
-  margin-right: 0;
+  margin-top: 3px;
+  margin-right: -6px;
   font-family: @font-family, sans-serif;
   font-weight: 400;
   font-size: 12px;

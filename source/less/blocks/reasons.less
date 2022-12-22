@@ -158,7 +158,7 @@
 @media(min-width: @desktop) {
   .reasons::before {
     content: "";
-    width: 1200px;
+    width: 100%;
     background-image: url("../img/intro-triangle-desktop.svg");
   }
   .reason-1 {
@@ -176,5 +176,12 @@
     padding-top: 52px;
     padding-bottom: 51px;
     flex-grow: 1;
+  }
+}
+
+@media(min-width: @huge) {
+  .reasons::before {
+    content: "";
+    width: 1200px;
   }
 }
