@@ -155,7 +155,7 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: @desktop) {
   .reasons::before {
     content: "";
     width: 1200px;
@@ -176,10 +176,5 @@
     padding-top: 52px;
     padding-bottom: 51px;
     flex-grow: 1;
-  }
-  .reasons__list-next {
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    justify-content: center;
   }
 }
