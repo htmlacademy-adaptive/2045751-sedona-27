@@ -57,8 +57,8 @@
         </div>
         <div class="form__info">
           <div class="form__wrapper form__info-wrapper form__wrapper--border">
-            <fieldset class="personal-details fieldset-options">
-              <legend class="personal-details__title fieldset-options__title">
+            <fieldset class="personal-details personal-details-intro fieldset-options">
+              <legend class="personal-details-intro__title fieldset-options__title">
                 Представьтесь:
               </legend>
               <label class="personal-details__label" for="personal-details__name">Имя*:</label>
@@ -70,8 +70,8 @@
             </fieldset>
           </div>
           <div class="form__wrapper form__info-wrapper form__wrapper--border">
-            <fieldset class="personal-details fieldset-options">
-              <legend class="personal-details__title fieldset-options__title">
+            <fieldset class="personal-details personal-details-contacts fieldset-options">
+              <legend class="personal-details-contacts__title fieldset-options__title">
                 Контактная информация:
               </legend>
               <label class="personal-details__label" for="personal-details__phone">Контактный телефон*:</label>
@@ -112,20 +112,24 @@
               Посещенные достопримечательности:
             </legend>
             <div class="attraction__wrapper">
-              <label class="attraction__variants">
-                <input type="checkbox" name="devil-bridge" checked>
+              <label class="attraction__variants attraction__capitalize">
+                <input class="attraction__variants-input" type="checkbox" name="devil-bridge" checked>
+                <span class="attraction__variants-checkbox"></span>
                 Мост дьявола
               </label>
-              <label class="attraction__variants">
-                <input type="checkbox" name="mountain-bell" checked>
+              <label class="attraction__variants attraction__capitalize">
+                <input class="attraction__variants-input" type="checkbox" name="mountain-bell" checked>
+                <span class="attraction__variants-checkbox"></span>
                 Гора-колокол
               </label>
               <label class="attraction__variants">
-                <input type="checkbox" name="slide-park" checked>
+                <input class="attraction__variants-input" type="checkbox" name="slide-park" checked>
+                <span class="attraction__variants-checkbox"></span>
                 Слайд-парк
               </label>
               <label class="attraction__variants">
-                <input type="checkbox" name="red-rocks">
+                <input class="attraction__variants-input" type="checkbox" name="red-rocks">
+                <span class="attraction__variants-checkbox"></span>
                 Красные скалы
               </label>
             </div>
@@ -136,7 +140,7 @@
             <legend class="emotions__title fieldset-options__title">
               Опишите свои эмоции:
             </legend>
-            <textarea class="emotions__comment" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="emotions__comment" name="emotions" cols="30" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
         </div>
         <div class="form__wrapper">

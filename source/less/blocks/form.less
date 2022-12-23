@@ -44,13 +44,28 @@
   width: 280px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 24px;
   border: none;
 }
 
-.fieldset-options__title {
+.personal-details-intro {
+  padding-bottom: 22px;
+}
+
+.personal-details-intro__title {
   padding-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
+}
+
+.personal-details-contacts {
+  padding-bottom: 18px;
+}
+
+.personal-details-contacts__title {
+  padding-top: 25px;
+  padding-bottom: 19px;
+}
+
+.fieldset-options__title {
   .font-form-title();
 }
 
@@ -95,6 +110,7 @@
 
 .personal-details__icon {
   position: relative;
+  margin-bottom: 3px;
 }
 
 .personal-details__icon-phone::after {
@@ -126,6 +142,7 @@
 }
 
 .impression__title {
+  padding-top: 25px;
   padding-bottom: 30px;
 }
 
@@ -160,7 +177,9 @@
 }
 
 .attraction__variants {
+  display: block;
   margin-bottom: 36px;
+  padding-left: 64px;
   .font-form-allotted();
 }
 
@@ -168,13 +187,42 @@
   margin-bottom: 0;
 }
 
+.attraction__capitalize {
+  text-transform: capitalize;
+}
+
+.attraction__variants-input {
+  position: absolute;
+  margin-left: 10px;
+  appearance: none;
+}
+
+.attraction__variants-checkbox {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  margin-top: -11px;
+  margin-left: -62px;
+  background-image: url("../img/icon-checkbox.svg");
+  background-repeat: no-repeat;
+}
+
+.attraction__variants-input:checked {
+  background-image: url("../img/icon-checkbox-checked.svg");
+}
+
+.attraction__variants-input:checked + .attraction__variants-checkbox {
+  background-image: url("../img/icon-checkbox-checked.svg");
+}
+
 .emotions__title {
-  padding-bottom: 21px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
 .emotions__comment {
   width: 280px;
-  margin-bottom: 27px;
+  margin-bottom: 51px;
   background-color: @bg-color-input;
   padding-top: 16px;
   padding-left: 18px;
