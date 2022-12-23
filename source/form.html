@@ -43,8 +43,8 @@
       <section class="intro">
         <h1 class="visually-hidden">Форма отзыва</h1>
         <picture>
-          <source srcset="img/intro-text-tablet.svg" media="(min-width: 768px)">
-          <img class="intro__caption-img" src="img/intro-text.svg" alt="Надпись Седона крупным шрифтом">
+          <source media="(min-width: 768px)" srcset="img/intro-text-tablet.svg" width="457" height="78">
+          <img class="intro__caption-img" src="img/intro-text.svg" alt="Надпись Седона крупным шрифтом" width="229" height="39">
         </picture>
       </section>
 
@@ -92,15 +92,18 @@
             </legend>
             <div class="impression__wrapper">
               <label class="impression__variants">
-                <input class="impression__positive" type="radio" name="impression" checked>
+                <input class="impression__variants-input impression__positive" type="radio" name="impression" checked>
+                <span class="impression__variants-radio"></span>
                 Скорее положительное
               </label>
               <label class="impression__variants">
-                <input class="impression__negative" type="radio" name="impression">
+                <input class="impression__variants-input impression__negative" type="radio" name="impression">
+                <span class="impression__variants-radio"></span>
                 Скорее отрицательное
               </label>
               <label class="impression__variants">
-                <input class="impression__difficult" type="radio" name="impression">
+                <input class="impression__variants-input impression__difficult" type="radio" name="impression">
+                <span class="impression__variants-radio"></span>
                 Затрудняюсь ответить
               </label>
             </div>

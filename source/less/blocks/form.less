@@ -153,12 +153,39 @@
 }
 
 .impression__variants {
+  display: block;
   margin-bottom: 36px;
+  padding-left: 63px;
   .font-form-allotted();
 }
 
 .impression__variants:last-child {
   margin-bottom: 0;
+}
+
+.impression__variants-input {
+  margin-top: 5px;
+  position: absolute;
+  margin-left: -45px;
+  appearance: none;
+}
+
+.impression__variants-radio {
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/icon-radio.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: -63px;
+  margin-top: -11px;
+}
+
+.impression__variants-input:checked + .impression__variants-radio {
+  background-image: url("../img/icon-radio-checked.svg");
+}
+
+.impression__variants-input:checked {
+  background-image: url("../img/icon-radio-checked.svg");
 }
 
 .attraction {
@@ -207,11 +234,11 @@
   background-repeat: no-repeat;
 }
 
-.attraction__variants-input:checked {
+.attraction__variants-input:checked + .attraction__variants-checkbox {
   background-image: url("../img/icon-checkbox-checked.svg");
 }
 
-.attraction__variants-input:checked + .attraction__variants-checkbox {
+.attraction__variants-input:checked {
   background-image: url("../img/icon-checkbox-checked.svg");
 }
 
@@ -263,6 +290,9 @@
 }
 
 @media(min-width: @tablet) {
+  .form {
+    padding-top: 39px;
+  }
   .form::before {
     content: "";
     width: 768px;
@@ -273,6 +303,7 @@
     padding-right: 60px;
   }
   .form__title {
+    margin-bottom: 20px;
     font-family: @font-family, sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -282,6 +313,7 @@
     width: 435px;
     margin: 0 auto;
     padding-bottom: 102px;
+    line-height: 24px;
   }
   .form__info-wrapper {
     padding: 0;
@@ -312,14 +344,36 @@
     padding-top: 0;
     .font-form-title-tablet();
   }
+  .personal-details__label {
+    width: 280px;
+    box-sizing: border-box;
+  }
+  .personal-details-intro__title {
+    margin-left: 13px;
+    padding-top: 0;
+    padding-bottom: 29px;
+  }
+  .personal-details-contacts__title {
+    margin-left: -21px;
+    padding-top: 0;
+    padding-bottom: 29px;
+  }
+  .personal-details__name,
+  .personal-details__surname,
+  .personal-details__patronymic {
+    width: 280px;
+    margin-left: -14px;
+  }
   .impression {
     width: 648px;
+    padding-bottom: 58px;
   }
   .impression__title  {
-    padding-top: 24px;
+    padding-top: 25px;
+    padding-bottom: 38px;
   }
   .impression__variants {
-    width: 280px;
+    width: 217px;
     display: flex;
     text-transform: none;
     .font-form-title();
@@ -331,10 +385,15 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .attraction {
+    padding-bottom: 16px;
+  }
+  .attraction__title {
+    padding-bottom: 39px;
+  }
   .attraction__variants {
-    width: 224px;
+    width: 161px;
     display: flex;
-    text-transform: none;
     .font-form-title();
   }
   .attraction__wrapper {
@@ -347,8 +406,13 @@
   .emotions {
     width: 648px;
   }
+  .emotions__title {
+    padding-bottom: 28px;
+  }
   .emotions__comment {
     width: 100%;
+    margin-bottom: 42px;
+    padding-bottom: 13px;
   }
   .form-submission {
     width: 648px;
@@ -357,6 +421,11 @@
   }
   .form-submission__button {
     width: 324px;
+  }
+  .form-submission__comment {
+    width: 156px;
+    margin-top: 7px;
+    font-size: 14px;
   }
 }
 
