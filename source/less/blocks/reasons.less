@@ -123,13 +123,15 @@
     flex-direction: row-reverse;
   }
   .reasons__item-content {
-    width: 190px;
     padding-top: 42px;
     padding-bottom: 42px;
     flex-grow: 1;
   }
   .reasons__item-content--border {
     border-bottom: none;
+  }
+  .reasons__item-content--change-color {
+    width: 190px;
   }
   .reason-1 {
     background-image: url("../img/reason-1-tablet-img.png");
@@ -148,7 +150,7 @@
   }
   .reasons__list-next {
     display: grid;
-    grid-template-columns: repeat(3, 256px);
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
     justify-content: center;
   }
 }
@@ -156,7 +158,7 @@
 @media(min-width: @desktop) {
   .reasons::before {
     content: "";
-    width: 1200px;
+    width: 100%;
     background-image: url("../img/intro-triangle-desktop.svg");
   }
   .reason-1 {
@@ -175,9 +177,11 @@
     padding-bottom: 51px;
     flex-grow: 1;
   }
-  .reasons__list-next {
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    justify-content: center;
+}
+
+@media(min-width: @huge) {
+  .reasons::before {
+    content: "";
+    width: 1200px;
   }
 }

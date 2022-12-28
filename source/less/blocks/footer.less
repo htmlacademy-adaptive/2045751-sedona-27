@@ -1,11 +1,11 @@
 .page-footer {
-  padding-top: 39px;
+  padding-top: 53px;
   padding-bottom: 23px;
 }
 
 .page-footer__hashtag {
-  padding-bottom: 34px; 
-  .font-title();
+  padding-bottom: 33px; 
+  .font-footer-title();
 }
 
 .socials-list {
@@ -30,24 +30,63 @@
   background-image: url('../img/icon-vk.svg');
   background-repeat: no-repeat;
   background-position: center;
+  &:hover {
+    background-image: url('../img/icon-vk-hover.svg');
+  }
+  &:active {
+    background-image: url('../img/icon-vk-active.svg');
+  }
 }
 
 .socials-telegram {
   background-image: url('../img/icon-telegram.svg');
   background-repeat: no-repeat;
   background-position: center;
+  &:hover {
+    background-image: url('../img/icon-telegram-hover.svg');
+  }
+  &:active {
+    background-image: url('../img/icon-telegram-active.svg');
+  }
 }
 
 .socials-youtube {
   background-image: url('../img/icon-youtube.svg');
   background-repeat: no-repeat;
   background-position: center;
+  &:hover {
+    background-image: url('../img/icon-youtube-hover.svg');
+  }
+  &:active {
+    background-image: url('../img/icon-youtube-active.svg'); 
+  }
 }
 
 .page-footer__info {
   width: 128px;
   height: 34px;
   margin: 0 auto;
+  &:hover {
+    .page-footer__info-logo {
+        fill: rgba(129, 179, 210, 1);
+      }
+    .page-footer__info-text {
+      color: rgba(129, 179, 210, 1);
+    }
+  }
+  &:active {
+    .page-footer__info-logo {
+      fill: rgba(179, 179, 179, 1);
+    }
+    .page-footer__info-text {
+      color: rgba(179, 179, 179, 1);
+  }
+  }
+}
+
+.page-footer__info-logo {
+  padding-top: 8px;
+  fill: #000000;
 }
 
 .page-footer__info-text {
@@ -57,11 +96,11 @@
   align-items: center;
 }
 
-.page-footer__info-img {
-  display: block;
-}
 
 @media(min-width: @tablet) {
+  .page-footer {
+    padding-top: 100px;
+  }
   .page-footer__wrapper {
     width: 648px;
     margin: 0 auto;
@@ -70,14 +109,18 @@
     align-items: center;
   }
   .page-footer__hashtag {
+    margin-top: 6px;
+    margin-left: 14px;
     padding-bottom: 0;
   }
   .socials-list {
     margin: 0;
+    margin-left: -7px;
     padding-bottom: 0;
   }
   .page-footer__info {
     margin: 0;
+    margin-right: -3px;
   }
 }
 
