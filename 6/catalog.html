@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фото и видео</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-adaptive.github.io/2045751-sedona-27/6/">
+</head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper wrapper">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" alt="Логотип сайта" width="185" height="96">
+        </a>
+        <button class="page-header__button" type="button">
+          <span class="visually-hidden">Меню гамбургер</span>
+        </button>
+      </div>
+      <nav class="nav nav--hidden nav--nojs">
+        <button class="nav__button nav__button--hidden" type="button">
+          <span class="visually-hidden">Кнопка закрыть меню</span>
+        </button>
+        <ul class="nav__list nav__list-left">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list-right">
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-catalog">
+      <section class="intro">
+        <h1 class="visually-hidden">Каталог фотографий и видео Седоны</h1>
+        <picture>
+          <source srcset="img/intro-text-tablet.svg" media="(min-width: 768px)">
+          <img class="intro__caption-img" src="img/intro-text.svg" alt="Надпись Седона крупным шрифтом">
+        </picture>
+        </section>
+
+      <section class="photo-video">
+        <div class="wrapper">
+          <h2 class="photo-video__title">Фото и видео</h2>
+          <p class="photo-video__text">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике
+          </p>
+        </div>
+        <ul class="photo-list">
+          <li class="photo-item">
+            <div class="photo-video__wrapper wrapper">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/non-native-spaces-desktop.jpg, img/non-native-spaces-desktop@2x.jpg 2x" width="1200" height="400">
+                <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desktop.jpg" width="972" height="400">
+                <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.jpg, img/non-native-spaces-tablet@2x.jpg 2x" width="648" height="400">
+                <img class="photo-item__img" src="img/non-native-spaces.jpg" srcset="img/non-native-spaces@2x.jpg 2x" alt="Автомобиль едет по дороге на фоне гор" width="280" height="280">
+              </picture>
+              <div class="photo-item__description">
+                <div class="photo-item__name">
+                  <p class="photo-item__title">
+                    неродные просторы
+                  </p>
+                  <p class="photo-item__author">
+                    Автор фото: Борис
+                  </p>
+                </div>
+                <div class="photo-item__scores">
+                  <button class="photo-item__button" type="button">
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </button>
+                  <output class="photo-item__out">1350</output>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="photo-item">
+            <div class="photo-video__wrapper wrapper">
+              <picture>
+                <source  media="(min-width: 1280px)" srcset="img/local-vegetation-desktop.jpg, img/local-vegetation-desktop@2x.jpg 2x" width="400" height="267">
+                <source  media="(min-width: 1200px)" srcset="img/local-vegetation-desktop.jpg" width="324" height="267">
+                <source  media="(min-width: 768px)" srcset="img/local-vegetation-tablet.jpg, img/local-vegetation-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="photo-item__img" src="img/local-vegetation.jpg" srcset="img/local-vegetation@2x.jpg 2x" alt="Кактус крупным планом на фоне скал" width="280" height="280">
+              </picture>
+              <div class="photo-item__description">
+                <div class="photo-item__name">
+                  <p class="photo-item__title">
+                    местная растительность
+                  </p>
+                  <p class="photo-item__author">
+                    Автор фото: Сергей
+                  </p>
+                </div>
+                <div class="photo-item__scores">
+                  <button class="photo-item__button" type="button">
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </button>
+                  <output class="photo-item__out">143</output>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="photo-item">
+            <div class="photo-video__wrapper wrapper">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/road-north-desktop.jpg, img/road-north-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 1200px)" srcset="img/road-north-desktop.jpg" width="324" height="267">
+                <source media="(min-width: 768px)" srcset="img/road-north-tablet.jpg, img/road-north-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="photo-item__img" src="img/road-north.jpg" srcset="img/road-north@2x.jpg 2x" alt="Дорога проходит через леса" width="280" height="280">
+              </picture>
+              <div class="photo-item__description">
+                <div class="photo-item__name">
+                  <p class="photo-item__title">
+                    дорога на север
+                  </p>
+                  <p class="photo-item__author">
+                    Автор фото: Петр
+                  </p>
+                </div>
+                <div class="photo-item__scores">
+                  <button class="photo-item__button" type="button">
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </button>
+                  <output class="photo-item__out">96</output>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="photo-item">
+            <div class="photo-video__wrapper wrapper">
+              <picture>
+                <source media="(min-width: 1280px)" srcset="img/devil's-bridge-desktop.jpg, img/devil's-bridge-desktop@2x.jpg 2x" width="400" height="267">
+                <source media="(min-width: 1200px)" srcset="img/devil's-bridge-desktop.jpg" width="324" height="267">
+                <source media="(min-width: 768px)" srcset="img/devil's-bridge-tablet.jpg, img/devil's-bridge-tablet@2x.jpg 2x" width="324" height="267">
+                <img class="photo-item__img" src="img/devil's-bridge.jpg" srcset="img/devil's-bridge@2x.jpg 2x" alt="Красивый вид на скалы" width="280" height="280">
+              </picture>
+              <div class="photo-item__description">
+                <div class="photo-item__name">
+                  <p class="photo-item__title">
+                    Мост дьявола
+                  </p>
+                  <p class="photo-item__author">
+                    Автор фото: Антон
+                  </p>
+                </div>
+                <div class="photo-item__scores">
+                  <button class="photo-item__button" type="button">
+                    <span class="visually-hidden">Поставить лайк</span>
+                  </button>
+                  <output class="photo-item__out">254</output>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="video">
+          <div class="wrapper">
+            <p class="video__title">
+              Все еще сомневаетесь?
+            </p>
+            <p class="video__text">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </p>
+            <video poster="img/video-poster.png" width="280" height="177" playsinline>
+              <source src="#" type="video/webm">
+              <source src="#" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper wrapper">
+        <div class="page-footer__hashtag">
+          #visitsedona
+        </div>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a class="socials-item__link socials-vk" href="#">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-item__link socials-telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-item__link socials-youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__info-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="page-footer__info">
+            <p class="page-footer__info-text">
+              <span>разработано</span>
+              <svg class="page-footer__info-logo" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6 0h-.1L0 1.4v24.7l13.5 
+                8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 
+                5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 
+                3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 
+                3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 
+                1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 
+                6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 
+                8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+              </svg>
+            </p>
+          </div>
+        </a>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
