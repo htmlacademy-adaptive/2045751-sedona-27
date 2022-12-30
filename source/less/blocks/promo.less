@@ -7,6 +7,10 @@
   background-position: center top;
   padding-top: 90px;
   padding-bottom: 85px;
+  @media(min-resolution: 2dppx) {
+    background-image: url("../img/promo-photo@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 .promo__caption-img {
@@ -19,6 +23,10 @@
     background-image: url("../img/promo-photo-tablet.png");
     padding-top: 77px;
     padding-bottom: 91px;
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/promo-photo-tablet@2x.png");
+      background-size: 768px auto;
+    }
   }
 }
 
@@ -27,5 +35,9 @@
     background-image: url("../img/promo-photo-desktop.png");
     padding-top: 77px;
     padding-bottom: 91px;
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/promo-photo-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }
