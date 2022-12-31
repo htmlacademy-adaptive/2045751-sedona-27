@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media(min-resolution: 2dppx) {
+    background-image: url("../img/intro-img@2x.png");
+  }
 }
 
 .intro__caption-img {
@@ -21,6 +24,20 @@
     min-height: 290px;
     background-image: url("../img/intro-img-tablet.png");
     background-position: left 0px top -56px;
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/intro-img-tablet@2x.png");
+    }
+  }
+  .intro__caption-img {
+    top: 95px;
+  }
+}
+
+@media(min-width: @desktop) {
+  .intro {
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/intro-img-desktop@2x.png");
+    }
   }
   .intro__caption-img {
     top: 95px;
