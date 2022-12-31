@@ -39,6 +39,8 @@ body {
     padding-right: 40px;
   }
   body {
+    max-width: 1280px;
+    margin: 0 auto;
     background-color: #ffffff;
   }
 }
