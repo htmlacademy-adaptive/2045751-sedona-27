@@ -301,7 +301,7 @@
     padding-right: 60px;
   }
   .form__title {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     font-family: @font-family, sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -431,11 +431,25 @@
 }
 
 @media(min-width: @desktop) {
+  .form {
+    padding-top: 91px;
+  }
+  .form__title {
+    padding-bottom: 5px;
+  }
+  .form__text {
+    padding-bottom: 65px;
+  }
   .form::before {
     content: "";
     width: 1200px;
     background-image: url("../img/intro-triangle-desktop.svg");
     top: -56px;
+  }
+  .form__info::after {
+    content: "";
+    height: 94%;
+    margin-left: 13px;
   }
   .form__info {
     width: 960px;
@@ -443,20 +457,47 @@
   .personal-details {
     width: 430px;
   }
+  .personal-details-intro__title {
+    padding-bottom: 27px;
+    padding-left: 36px;
+  }
+  .personal-details__label {
+    padding-left: 15px;
+  }
+  .personal-details-contacts__title {
+    padding-bottom: 27px;
+    padding-left: 9px;
+  }
+  .personal-details-contacts__label {
+    padding-left: 43px;
+  }
   .personal-details__name,
   .personal-details__surname,
   .personal-details__patronymic {
     width: 430px;
-    margin-left: -14px;
+    margin-left: 0;
   }
   .personal-details__phone, .personal-details__email {
     width: 402px;
+    margin-left: 27px;
+  }
+  .impression {
+    padding-bottom: 48px;
   }
   .impression__wrapper {
     width: 854px;
+    justify-content: normal;
+  }
+  .impression__title  {
+    padding-top: 34px;
+    padding-bottom: 55px;
   }
   .attraction__wrapper {
     width: 960px;
+    justify-content: normal;
+  }
+  .attraction__title {
+    padding-bottom: 68px;
   }
   .attraction__variants {
     width: 172px;
@@ -472,6 +513,18 @@
   }
   .form-submission__button {
     width: 384px;
+  }
+}
+
+@media(min-width: @huge) {
+  .impression__variants {
+    padding-left: 90px;
+  }
+  .impression__variants:nth-child(3n+1) {
+    padding-left: 63px;
+  }
+  .impression__variants:nth-child(3n+3) {
+    margin-right: -41px;
   }
 }
 
