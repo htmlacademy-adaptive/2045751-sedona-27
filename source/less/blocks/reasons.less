@@ -84,10 +84,6 @@
   padding-left: 2px;
 }
 
-.reasons__item-title-next {
-  padding-top: 10px;
-}
-
 .reasons__item-number {
   margin: 0;
   padding-bottom: 17px;
@@ -105,11 +101,19 @@
 }
 
 .reasons__list-next {
+  padding-bottom: 3px;
   background-color: @bg-color-reasons-second;
 }
 
 .reasons__list-next::before {
   content: none;
+}
+
+.next-reasons-item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 19px;
+  padding-right: 15px;
 }
 
 .reasons__item-title-next,
@@ -119,7 +123,15 @@
 }
 
 .reasons__item-title-next {
-  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.reasons__item-number-next {
+  padding-bottom: 4px;
+}
+
+.reasons__item-text-next {
+  padding-top: 12px;
 }
 
 .reason-1 {
@@ -136,6 +148,12 @@
   background-position: center;
 }
 
+@media(min-width: 400px) {
+  .reasons__list:before {
+    content: none;
+  }
+}
+
 @media(min-width: @tablet) {
   .reasons__content {
     width: 520px;
@@ -144,20 +162,26 @@
     padding-bottom: 56px;
   }
   .reasons__content-slogan {
-    padding-bottom: 40px;
+    padding-bottom: 29px;
+    padding-left: 0;
     .font-title-tablet();
   }
   .reasons__item-title {
     width: 158px;
     margin: 0 auto;
-    padding-bottom: 19px;
+    padding-bottom: 13px;
+    padding-left: 4px;
     .font-title-tablet();
   }
   .reasons__item-title--light {
     color: @color-reasons-title-light;
   }
+  .reasons__item-title-reverse {
+    width: 150px;
+    padding-top: 32px;
+  }
   .reasons__item-number {
-    padding-bottom: 34px;
+    padding-bottom: 23px;
   }
   .reasons__item-wrapper {
     display: flex;
@@ -166,9 +190,9 @@
     flex-direction: row-reverse;
   }
   .reasons__item-content {
-    padding-top: 42px;
-    padding-bottom: 42px;
-    flex-grow: 1;
+    padding-top: 21px;
+    padding-bottom: 0;
+    flex-grow: 2;
   }
   .reasons__item-content--border {
     border-bottom: none;
@@ -179,11 +203,13 @@
   .reason-1 {
     background-image: url("../img/reason-1-tablet-img.png");
     min-width: 512px;
+    min-height: 256px;
     flex-grow: 10;
   }
   .reason-2 {
     background-image: url("../img/reason-2-tablet-img.png");
     min-width: 512px;
+    min-height: 256px;
     flex-grow: 10;
   }
   .reasons::before {
