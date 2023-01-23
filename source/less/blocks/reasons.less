@@ -242,10 +242,19 @@
 }
 
 @media(min-width: @desktop) {
+  .reasons__content {
+    padding-top: 60px;
+  }
+  .reasons__item-wrapper {
+    margin-top: -12px;
+  }
   .reasons::before {
     content: "";
     width: 100%;
     background-image: url("../img/intro-triangle-desktop.svg");
+  }
+  .reasons__item-title--light {
+    padding-top: 20px;
   }
   .reason-1 {
     background-image: url("../img/reason-1-desktop-img.png");
@@ -259,9 +268,15 @@
   }
   .reasons__item-content {
     width: 300px;
-    padding-top: 52px;
-    padding-bottom: 51px;
-    flex-grow: 1;
+    padding-top: 32px;
+    padding-bottom: 0;
+    flex-grow: 2;
+  }
+  .reasons__item-next {
+    padding-left: 18px;
+  }
+  .reasons__item-text-next {
+    padding-bottom: 20px;
   }
 }
 
@@ -269,5 +284,9 @@
   .reasons::before {
     content: "";
     width: 1200px;
+  }
+  .reasons__item-text {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }

@@ -109,11 +109,38 @@
   }
 }
 
+@media(min-width: 769px) {
+  .recommendations-item-house,
+  .recommendations-item-burger,
+  .recommendations-item-gift {
+    background-position: center top;
+  }
+}
+
 @media(min-width: @desktop) {
   .recommendations-list {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 70px;
+    padding-bottom: 79px;
     grid-template-columns: repeat(3, 300px);
     column-gap: 100px;
+  }
+  .recommendations-item-burger {
+    background-position: center top 3px;
+  }
+  .recommendations-item__text-burger {
+    width: 300px;
+    margin-left: -20px
+  }
+  .recommendations-item-gift {
+    background-image: url("../img/icon-gift-desktop.svg");
+    background-position: center top 1px;
+    background-size: 78px 75px;
+  }
+  .recommendations-item__title-gift {
+    margin-top: 2px;
+  }
+  .recommendations-item__text-gift {
+    padding-left: 43px;
+    padding-right: 43px;
   }
 }
