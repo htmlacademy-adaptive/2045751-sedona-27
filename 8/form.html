@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма отзыва</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-adaptive.github.io/2045751-sedona-27/8/">
+</head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper wrapper">
+        <a class="page-header__logo logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" alt="Логотип сайта" width="185" height="96">
+        </a>
+        <button class="page-header__button" type="button">
+          <span class="visually-hidden">Меню гамбургер</span>
+        </button>
+      </div>
+      <nav class="nav nav--hidden nav--nojs">
+        <button class="nav__button nav__button--hidden" type="button">
+          <span class="visually-hidden">Кнопка закрыть меню</span>
+        </button>
+        <ul class="nav__list nav__list-left">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list-right">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#">Форма отзыва</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-form">
+      <section class="intro">
+        <h1 class="visually-hidden">Форма отзыва</h1>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/intro-text-tablet.svg" width="457" height="78">
+          <img class="intro__caption-img" src="img/intro-text.svg" alt="Надпись Седона крупным шрифтом" width="229" height="39">
+        </picture>
+      </section>
+
+      <form class="form" action=" https://echo.htmlacademy.ru/" method="post">
+        <div class="form__wrapper">
+          <h2 class="form__title">Оставьте свой отзыв</h2>
+          <p class="form__text">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </div>
+        <div class="form__info">
+          <div class="form__wrapper form__info-wrapper form__wrapper--border">
+            <fieldset class="personal-details personal-details-intro fieldset-options">
+              <legend class="personal-details-intro__title fieldset-options__title">
+                Представьтесь:
+              </legend>
+              <label class="personal-details__label" for="personal-details__name">Имя*:</label>
+              <input class="personal-details__name" id="personal-details__name" name="name" type="text" value="Петр" required>
+              <label class="personal-details__label" for="personal-details__surname">Фамилия*:</label>
+              <input class="personal-details__surname" id="personal-details__surname" name="surname" type="text" value="Пустота" required>
+              <label class="personal-details__label" for="personal-details__patronymic">Отчество:</label>
+              <input class="personal-details__patronymic" id="personal-details__patronymic" name="patronymic" type="text" value="Викторович">
+            </fieldset>
+          </div>
+          <div class="form__wrapper form__info-wrapper form__wrapper--border">
+            <fieldset class="personal-details personal-details-contacts fieldset-options">
+              <legend class="personal-details-contacts__title fieldset-options__title">
+                Контактная информация:
+              </legend>
+              <label class="personal-details__label personal-details-contacts__label" for="personal-details__phone">Контактный телефон*:</label>
+              <div class="personal-details__icon personal-details__icon-phone">
+                <input class="personal-details__phone" id="personal-details__phone" name="phone" type="text" placeholder="Введите телефон" required>
+              </div>
+              <label class="personal-details__label personal-details-contacts__label" for="personal-details__email">Электронная почта*:</label>
+              <div class="personal-details__icon personal-details__icon-email">
+                <input class="personal-details__email" id="personal-details__email" name="phone" type="text" placeholder="Введите e-mail" required>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form__wrapper form__wrapper--border">
+          <fieldset class="impression fieldset-options">
+            <legend class="impression__title fieldset-options__title">
+              Ваше общее впечатление:
+            </legend>
+            <div class="impression__wrapper">
+              <label class="impression__variants impression__variants-positive">
+                <input class="impression__variants-input impression__positive" type="radio" name="impression" checked>
+                <span class="impression__variants-radio"></span>
+                Скорее положительное
+              </label>
+              <label class="impression__variants impression__variants-negative">
+                <input class="impression__variants-input impression__negative" type="radio" name="impression">
+                <span class="impression__variants-radio"></span>
+                Скорее отрицательное
+              </label>
+              <label class="impression__variants impression__variants-difficult">
+                <input class="impression__variants-input impression__difficult" type="radio" name="impression">
+                <span class="impression__variants-radio"></span>
+                Затрудняюсь ответить
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__wrapper form__wrapper--border">
+          <fieldset class="attraction fieldset-options">
+            <legend class="attraction__title fieldset-options__title">
+              Посещенные достопримечательности:
+            </legend>
+            <div class="attraction__wrapper">
+              <label class="attraction__variants attraction__capitalize">
+                <input class="attraction__variants-input" type="checkbox" name="devil-bridge" checked>
+                <span class="attraction__variants-checkbox"></span>
+                Мост дьявола
+              </label>
+              <label class="attraction__variants attraction__capitalize">
+                <input class="attraction__variants-input" type="checkbox" name="mountain-bell" checked>
+                <span class="attraction__variants-checkbox"></span>
+                Гора-колокол
+              </label>
+              <label class="attraction__variants">
+                <input class="attraction__variants-input" type="checkbox" name="slide-park" checked>
+                <span class="attraction__variants-checkbox"></span>
+                Слайд-парк
+              </label>
+              <label class="attraction__variants">
+                <input class="attraction__variants-input" type="checkbox" name="red-rocks">
+                <span class="attraction__variants-checkbox"></span>
+                Красные скалы
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form__wrapper form__wrapper--border">
+          <fieldset class="emotions fieldset-options">
+            <legend class="emotions__title fieldset-options__title">
+              Опишите свои эмоции:
+            </legend>
+            <textarea class="emotions__comment" name="emotions" cols="30" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+        </div>
+        <div class="form__wrapper">
+          <div class="form-submission">
+            <button class="form-submission__button" type="submit">Отправить отзыв</button>
+            <p class="form-submission__comment">
+              *-обязательные поля
+            </p>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper wrapper">
+        <div class="page-footer__hashtag">
+          #visitsedona
+        </div>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a class="socials-item__link socials-vk" href="#">
+              <span class="visually-hidden">В контакте</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-item__link socials-telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-item__link socials-youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__info-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="page-footer__info">
+            <p class="page-footer__info-text">
+              <span>разработано</span>
+              <svg class="page-footer__info-logo" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6 0h-.1L0 1.4v24.7l13.5 
+                8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 
+                5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 
+                3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 
+                3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 
+                1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 
+                6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 
+                8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"/>
+              </svg>
+            </p>
+          </div>
+        </a>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
