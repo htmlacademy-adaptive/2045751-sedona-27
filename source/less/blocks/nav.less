@@ -26,10 +26,20 @@
   background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  right: 20px;
   top: 17px;
+  right: 20px;
   border: none;
   display: block;
+  &:hover {
+    background-image: url("../img/icon-cross-hover.svg");
+    top: 16px;
+    right: 20px;
+  }
+  &:active {
+    background-image: url("../img/icon-cross-active.svg");
+    top: 16px;
+    right: 20px;
+  }
 }
 
 .nav__button--hidden {
